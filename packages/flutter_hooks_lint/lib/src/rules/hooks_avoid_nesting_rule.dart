@@ -25,7 +25,7 @@ class HooksAvoidNestingRule extends DartLintRule {
         HooksMethodVisitor(
           onVisitMethodInvocation: (node) {
             if (_findControlFlow(node)) {
-              reporter.atNode(node, code);
+              reporter.atNode(classNode, code);
             }
           },
         ),

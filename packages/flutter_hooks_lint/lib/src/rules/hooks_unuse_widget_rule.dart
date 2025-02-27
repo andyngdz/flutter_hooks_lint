@@ -100,7 +100,7 @@ class HooksUnuseWidgetRule extends DartLintRule {
       );
 
       if (!isNeedsHookWidget) {
-        reporter.atNode(extendsClause.superclass, code);
+        reporter.atNode(declaration, code);
       }
     });
   }

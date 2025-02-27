@@ -38,7 +38,7 @@ class HooksAvoidWithinClassRule extends DartLintRule {
                       element != null && HooksHelper.isHooksElement(element);
 
                   if (!isIncludedHooksBuilder) {
-                    reporter.atNode(node, code);
+                    reporter.atNode(declaration, code);
                   }
                 },
               ),

@@ -30,7 +30,7 @@ class HooksCallbackConsiderationRule extends DartLintRule {
               if (firstArgument is FunctionExpression) {
                 final returnType = firstArgument.declaredElement?.returnType;
                 if (returnType is FunctionType) {
-                  reporter.atNode(node, code);
+                  reporter.atNode(classNode, code);
                 }
               }
             }
